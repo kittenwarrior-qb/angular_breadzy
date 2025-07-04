@@ -1,2 +1,8 @@
-<p>header nek!</p>
- <button nz-button nzType="primary">Primary Button</button>
+<header
+  class="w-full sticky top-0 z-50 bg-white"
+  [ngClass]="isAtTop ? 'shadow-none' : 'shadow-sm'"
+>
+  <div class="w-full max-w-[1280px] mx-auto flex flex-row items-center justify-between p-4 gap-5 text-sm font-medium">
+    <button nz-button nzType="default">Default Button</button>
+  </div>
+</header>
